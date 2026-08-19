@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor</title>
+    <link rel="stylesheet" href="./style.css">
+    
+
+</head>
+<body>
+    <img class="imagem-mao" src="./logo.gif" Bandeira-Brasil-Moeda>
+    
+    
+
+    <div class="card">
+        <label class="field-label">Converte de </label>
+
+    <select class="Select-btn" id="de">
+        <option value="BRL">🇧🇷 R$ Real Brasileiro</option>
+        <option value="USD">🇺🇸 $ Dólar Americano</option>
+        <option value="EUR">🇪🇺 € Euro</option>
+        <option value="GBP">🇬🇧 £ Libra Esterlina</option>
+        <option value="JPY">🇯🇵 ¥ Iene Japonês</option>
+        <option value="CAD">🇨🇦 C$ Dólar Canadense</option>
+        <option value="AUD">🇦🇺 A$ Dólar Australiano</option>
+        <option value="CHF">🇨🇭 Fr Franco Suíço</option>
+        <option value="CNY">🇨🇳 ¥ Yuan Chinês</option>
+    </select>
+
+        
+        <label class ="field-label">Converte para</label>
+    
+        <select class ="select-btn" id="para">
+        <option value="USD">🇺🇸 $ Dólar Americano</option>
+        <option value="BRL">🇧🇷 R$ Real Brasileiro</option>
+        <option value="EUR">🇪🇺 € Euro</option>
+        <option value="GBP">🇬🇧 £ Libra Esterlina</option>
+        <option value="JPY">🇯🇵 ¥ Iene Japonês</option>
+        <option value="CAD">🇨🇦 C$ Dólar Canadense</option>
+        <option value="AUD">🇦🇺 A$ Dólar Australiano</option>
+        <option value="CHF">🇨🇭 Fr Franco Suíço</option>
+        <option value="CNY">🇨🇳 ¥ Yuan Chinês</option>
+    </select>
+
+        <label class="field-label">Valor</label>
+        <input class="valor-input" type="number" id="valor" value="" min="0" step="any">
+
+        <button class="btn-converter" onclick="converter()">Converter</button>
+    <div class="loading" id="loading">Buscando cotação...</div>
+    <div class="erro" id="erro">Não foi possível buscar a cotação. Tente novamente.</div>
+
+    <div class="resultado" id="resultado">
+      <div class="moeda-bloco">
+        <span class="bandeira" id="bandeira-de"></span>
+        <div class="nome" id="nome-de"></div>
+        <div class="valor-fmt" id="valor-de"></div>
+      </div>
+      <span class="seta">▼</span>
+      <div class="moeda-bloco">
+        <span class="bandeira" id="bandeira-para"></span>
+        <div class="nome" id="nome-para"></div>
+        <div class="valor-fmt" id="valor-para"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
