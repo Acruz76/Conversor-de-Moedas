@@ -29,7 +29,7 @@ As cotações são buscadas através da [AwesomeAPI](https://docs.awesomeapi.com
 Ao abrir o projeto, você verá:
 - Um **card centralizado** com campos para selecionar moeda de origem e destino.  
 - Um campo para inserir o valor desejado.  
-- Um botão **Converter** que retorna o resultado com bandeiras e valores formatados.  
+- Um botão **Converter** que retorna o resultado com valores formatados.  
 
 ---
 
