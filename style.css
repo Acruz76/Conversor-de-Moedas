@@ -76,7 +76,6 @@ select,
   opacity: 0.6;
 } 
 
-/* Resultado, erro e loading escondidos por padrão */
 .resultado,
 .erro,
 .loading {
@@ -87,12 +86,10 @@ select,
   text-align: center;
 }
 
-/* Mostra quando tiver a classe visivel */
 .visivel {
   display: block;
 }
 
-/* Estilo extra para o bloco de moedas */
 .moeda-bloco {
   margin: 8px 0;
 }
@@ -106,4 +103,72 @@ select,
   font-weight: bold;
   font-size: 18px;
   color: #2f36be;
+}
+  
+@media (max-width: 768px) {
+  .card {
+    max-width: 340px;
+    margin-top: 8%;
+    padding: 30px 25px;
+  }
+}
+
+/* Celulares grandes (iPhone Plus/Max, Android grandes) */
+@media (max-width: 480px) {
+  body {
+    padding-top: 30px;
+  }
+
+  .card {
+    max-width: 100%;
+    margin-top: 6%;
+    padding: 25px 20px;
+    border-radius: 22px;
+  }
+
+  .field-label {
+    font-size: 17px;
+  }
+
+  select,
+  .valor-input {
+    height: 38px;
+    font-size: 13px;
+  }
+
+  .btn-converter {
+    font-size: 17px;
+    padding: 9px 10px;
+  }
+
+  .bandeira {
+    font-size: 16px;
+  }
+
+  .valor-fmt {
+    font-size: 16px;
+  }
+}
+
+/* Celulares bem pequenos (iPhone SE e similares) */
+@media (max-width: 360px) {
+  .card {
+    padding: 20px 15px;
+    margin-top: 5%;
+  }
+
+  .field-label {
+    font-size: 15px;
+  }
+
+  .btn-converter {
+    font-size: 15px;
+  }
+}
+
+/* Telas grandes / desktop — evita que o card fique minúsculo no meio da tela */
+@media (min-width: 1200px) {
+  .card {
+    max-width: 400px;
+  }
 }
